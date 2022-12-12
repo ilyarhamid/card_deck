@@ -1,4 +1,3 @@
-from card import Card
 import numpy as np
 
 
