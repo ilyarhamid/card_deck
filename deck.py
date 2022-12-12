@@ -12,6 +12,11 @@ def build_deck(num: int = 1, joker: bool = False):
     return np.array(card_list * num)
 
 
+class Card(object):
+    def __init__(self, value: str, suite: str) -> None:
+        self.value = value
+        self.suite = suite
+
 class Deck(object):
     def __init__(self, num_pair: int = 1, joker: bool = False) -> None:
         self.joker = joker
